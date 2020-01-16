@@ -3,6 +3,7 @@
    License: none (public domain)
 */
 
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Mukta&display=swap');
 html,
 body,
 div,
@@ -166,6 +167,12 @@ h5 {
 nav {
     margin: 1%;
     padding: 1%;
+    overflow: hidden;
+    position: fixed;
+    background-color: #4169E1;
+    top: 0;
+    width: 100%;
+    z-index: 1;
 }
 
 nav a {
@@ -173,6 +180,10 @@ nav a {
     padding: 2%;
     color: #A9A9A9;
     text-decoration: none;
+}
+
+nav a:hover {
+    color: #F5FFFA;
 }
 
 .header-section {
@@ -200,6 +211,16 @@ hr {
     text-decoration: none;
     margin: 0 0 0 32%;
     font-size: 20px;
+    background-color: #778899;
+    opacity: 0.75;
+}
+
+.header-section a:hover {
+    font-size: 25px;
+    margin: 0 0 0 31%;
+    padding: 0 22px 0 22px;
+    opacity: 1;
+    transition: 0.3s;
 }
 
 .header-section img {
@@ -257,4 +278,12 @@ footer .cc {
 
 .theway {
     max-width: 15%;
+}
+
+p {
+    font-family: 'Mukta', sans-serif;
+}
+
+h2 {
+    font-family: 'Luckiest Guy', cursive;
 }
