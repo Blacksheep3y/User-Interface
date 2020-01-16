@@ -3,64 +3,287 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+@import url('https://fonts.googleapis.com/css?family=Luckiest+Guy|Mukta&display=swap');
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
+
 
 /* Set every element's box-sizing to border-box */
+
 * {
     box-sizing: border-box;
+    max-width: 100%;
 }
 
-html, body {
+html,
+body {
     height: 100%;
     font-family: 'Titillium Web', sans-serif;
 }
 
-h1, h2, h3, h4, h5 {
+h1,
+h2,
+h3,
+h4,
+h5 {
     font-family: 'Bangers', cursive;
     letter-spacing: 1px;
     margin-bottom: 15px;
 }
 
+
 /* Your code starts here! */
+
+nav {
+    margin: 1%;
+    padding: 1%;
+    overflow: hidden;
+    position: fixed;
+    background-color: #4169E1;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+nav a {
+    margin: 3%;
+    padding: 2%;
+    color: #A9A9A9;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #F5FFFA;
+}
+
+.header-section {
+    margin: 15%;
+    display: inline;
+    text-align: center;
+    overflow: hidden;
+}
+
+hr {
+    width: 80%;
+}
+
+.header-section h1 {
+    font-size: 80px;
+    display: inline-block;
+    padding: 5px;
+    margin: 10% 0 2% 10%;
+}
+
+.header-section a {
+    padding: 0 20px 0 20px;
+    border: #333 1px solid;
+    color: #333;
+    text-decoration: none;
+    margin: 0 0 0 32%;
+    font-size: 20px;
+    background-color: #778899;
+    opacity: 0.75;
+}
+
+.header-section a:hover {
+    font-size: 25px;
+    margin: 0 0 0 31%;
+    padding: 0 22px 0 22px;
+    opacity: 1;
+    transition: 0.3s;
+}
+
+.header-section img {
+    margin: -25% 0 8% 40%;
+}
+
+.main-content .main-content-top {
+    display: inline-block;
+    max-width: 34%;
+    margin: 2% 0 2% 8%;
+    padding: 2%;
+}
+
+.main-content-top h2 {
+    font-size: 20px;
+}
+
+.main-content .middle-img {
+    display: block;
+    margin: 1% 20% 1% 10%;
+    width: 70%;
+}
+
+.main-content-bottom {
+    display: inline-block;
+    max-width: 20%;
+    margin: 2% 0 2% 8%;
+    padding: 1.5%;
+}
+
+footer {
+    font-size: 18px;
+}
+
+footer h2 {
+    margin-top: 2%;
+}
+
+footer span {
+    margin-bottom: 5%;
+}
+
+footer p {
+    margin-bottom: 2%;
+}
+
+footer .cc {
+    text-align: center;
+}
+
+.main-content-container {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.theway {
+    max-width: 15%;
+}
+
+p {
+    font-family: 'Mukta', sans-serif;
+}
+
+h2 {
+    font-family: 'Luckiest Guy', cursive;
+}
